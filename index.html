@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>DashBoard</title>
+    <script src="./js/menu.js"></script>
+    <!-- <script src="http://www.chartjs.org/dist/2.7.1/Chart.js"></script> -->
+    <!-- <script src="http://www.chartjs.org/samples/latest/utils.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
 </head>
+
 <body>
-    <section>
-        <div></div>
-    </section>
+    <div class="sideBar" id="sideBar" onclick="closeOpenBar()">
+        <a href="#" class="closebtn" id="closeOpen">☰</a>
+        <a href="" class="pages"><i class="fas fa-chart-line"></i>DashBoard</a>
+        <a href="" class="pages"><i class="fas fa-chart-line"></i>Vagas</a>
+        <a href="" class="pages"><i class="far fa-question-circle"></i>Suporte</a>
+        <a href="" class="pages"><i class="fas fa-cog"></i>Configurações</a>
+        <a href="" class="pages"><i class="fas fa-sign-out-alt"></i>Logout</a>
+    </div>
+    <div class="main-Dashboard" id="main-Dashboard">
+        <div class="container">
+            <h1>DashBoard</h1>
+            <div class="f-green f-light">
+                <h1>105</h1>
+            </div>
+            <div class="f-yellow f-light">
+                <h1>105</h1>
+            </div>
+            <div class="f-red f-light">
+                <h1>105</h1>
+            </div>
+            <div class="graph graph-1">
+                <h3>Ocupação das vagas</h3>
+                <canvas id="graph-Population"></canvas>
+            </div>
+            <div class="graph graph-2">
+                <h3>Vagas mais Utilizadas</h3>
+                <canvas id="graph-utility"></canvas>
+            </div>
+            <div class="graph graph-3">
+                <h3>Ocupação</h3>
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
+<script src="https://kit.fontawesome.com/4d7d6b2306.js" crossorigin="anonymous"></script>
+<script src="./js/graph.js"></script>
