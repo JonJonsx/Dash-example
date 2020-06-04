@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #25294a;
+    font-family: 'Roboto', sans-serif;
+}
+.sideBar{
+    position: fixed;
+    width: 40px;
+    height: 100%;
+    background-color: #1f2341 !important;
+    font-size: 20px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.sideBar a{
+    display: block;
+    padding: 15px 10px;
+}
+.sideBar i{
+    margin-right: 10px;
+}
+a{
+    color:#fff;
+    text-decoration: none;
+}
+.sideBar a:hover{
+    background-color: #25294a;
+}
+.main-Dashboard{
+    transition: all 0.5s;
+    color: #fff;;
+}
+.container{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.main-Dashboard .container div{
+    display: inline-block;
+    margin: 5px;
+    background-color: #1f2341;
+    border-radius: 20px;
+}
+.f-light{
+    width: 30%;
+    height: 140px;
+    text-align: center;
+}
+.f-light h1{
+    margin: auto;
+}
+.f-green{
+    background-image: linear-gradient(to right, #27ae60 , #2d3436);
+}
+.f-yellow{
+    background-image: linear-gradient(to right, #f1c40f , #2d3436);
+}
+.f-red{
+    background-image: linear-gradient(to right, #e74c3c , #2d3436);
+}
+.graph{
+    width: 250px;
+    height: 220px;
+}
+.graph-1{
+    width: 30%;
+}
+.graph-2{
+    width: 61%;
+}
+.graph-3{
+    width: 92%;
+}
