@@ -2,7 +2,6 @@ function closeOpenBar(){
     var closeOpen = document.getElementById('closeOpen');
     var sideBar = document.getElementById('sideBar');
     var dashBoard = document.getElementById('main-Dashboard');
-    debugger;
     if(closeOpen.innerHTML == 'x'){
         sideBar.style.width = '40px';
         dashBoard.style.marginLeft = '40px';
@@ -13,3 +12,4 @@ function closeOpenBar(){
         closeOpen.innerHTML = 'x';
     }
 }
+console.log(closeOpen.value);
