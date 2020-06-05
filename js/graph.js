@@ -38,6 +38,8 @@ var utility = new Chart(graphUtility, {
     // Configuration options go here
     options: {}
 });
+
+
 function getRandomColor() {
     const letters = '0123456789ABCDEF';
     let color = '#';
