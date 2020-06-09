@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <title>DashBoard</title>
+    <script src="../js/menu.js"></script>
+</head>
+
+<body>
+    <div class="sideBar" id="sideBar" onclick="closeOpenBar()">
+        <b id="closeOpen" class="icon closeOpen">☰</b>
+        <a href="#">Fechar</a>
+        <i class="fas fa-chart-line icon"></i>
+        <a href="../index.html" class="pages">DashBoard</a>
+        <i class="far fa-question-circle icon"></i>
+        <a href="./suporte.html" class="pages"></i>Suporte</a>
+        <i class="fas fa-cog icon"></i>
+        <a href="./config.html" class="pages">Configurações</a>
+        <i class="fas fa-sign-out-alt icon"></i>
+        <a href="" class="pages">Logout</a>
+    </div>
+    <div class="main-Suporte main" id="main-Suporte">
+        <div class="container">
+            <h1>Suporte</h1>
+            <div>
+                <form action="" class="read">
+                    <label for="txtNome">Nome</label>
+                    <input type="text" placeholder="Nome" id="txtNome">
+
+                    <label for="txtEmail">Email:</label>
+                    <input type="email" placeholder="exemplo@exemplo.com" id="txtEmail">
+
+                    <label for="txtAssunto">Assunto:</label>
+                    <input type="text" placeholder="Assunto" id="txtAssunto">
+
+                    <label for="txtMensagem">Mensagem:</label>
+                    <textarea name="" id="txtMensagem" cols="30" rows="10"></textarea>
+                    <button class="btnSubmit">Enviar</button>
+                </form>
+            </div>
+            <div class="box-iconLottie">
+                <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_uCA94X.json"  background="transparent"  speed="1" class="iconLottie" loop  autoplay></lottie-player>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="https://kit.fontawesome.com/4d7d6b2306.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="./js/graph.js"></script>
