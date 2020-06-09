@@ -19,16 +19,14 @@
         <a href="#">Fechar</a>
         <i class="fas fa-chart-line icon"></i>
         <a href="" class="pages">DashBoard</a>
-        <i class="fas fa-chart-line icon"></i>
-        <a href="" class="pages">Vagas</a>
         <i class="far fa-question-circle icon"></i>
-        <a href="" class="pages"></i>Suporte</a>
+        <a href="./pages/suporte.html" class="pages"></i>Suporte</a>
         <i class="fas fa-cog icon"></i>
         <a href="./pages/config.html" class="pages">Configurações</a>
         <i class="fas fa-sign-out-alt icon"></i>
         <a href="" class="pages">Logout</a>
     </div>
-    <div class="main-Dashboard" id="main-Dashboard">
+    <div class="main-Dashboard main" id="main-Dashboard">
         <div class="container">
             <h1>DashBoard</h1>
             <div class="f-green f-light">
@@ -42,15 +40,17 @@
             </div>
             <div class="graph graph-1">
                 <h3>Ocupação das vagas</h3>
-                <canvas id="graph-Population" width="100%" height="72px"></canvas>
+                <canvas id="graph-Population" class="canvas" min-width="190px" max-width ="320px" height="190px"></canvas>
             </div>
             <div class="graph graph-2">
                 <h3>Vagas mais Utilizadas</h3>
-                <canvas id="graph-utility" width="100%" height="40px"></canvas>
+                <canvas id="graph-utility" class="canvas" min-width="200px" max-width ="340px" height="100px"></canvas>
             </div>
-            <div class="graph graph-3">
+            <div class="graph-3">
                 <h3>Ocupação</h3>
-                <canvas id="myChart"></canvas>
+                <div class="ocupation" id="ocupation">
+
+                </div>
             </div>
         </div>
     </div>
@@ -59,3 +59,4 @@
 </html>
 <script src="https://kit.fontawesome.com/4d7d6b2306.js" crossorigin="anonymous"></script>
 <script src="./js/graph.js"></script>
+<script src="./js/index.js"></script>
