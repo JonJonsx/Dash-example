@@ -1,7 +1,7 @@
 function closeOpenBar(){
     var closeOpen = document.getElementById('closeOpen');
     var sideBar = document.getElementById('sideBar');
-    var dashBoard = document.getElementById('main-Dashboard');
+    var dashBoard = document.getElementsByClassName('main')[0];
     if(closeOpen.innerHTML == 'x'){
         sideBar.style.width = '40px';
         dashBoard.style.marginLeft = '40px';
